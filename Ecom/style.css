@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    text-decoration: none;
+    font-style: unset;
+}
+
+.menu{
+    
+    flex-direction: column;
+    align-items: center;
+    
+    height:auto;
+    width: 250px;
+    
+    margin-top: 50px;
+   /* background-color: rgb(245, 245, 245);*/
+   
+
+    /* justify-content: center;*/
+}
+ 
+.lista{
+     
+    background-color: rgb(0, 56, 130);
+   /* align-self: center;*/
+     flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+   /* align-content: space-around;*/
+    margin-left: 40px;
+    visibility: hidden;
+    width: fit-content;
+      
+    /*background-color: lightsteelblue;*/
+    
+    
+}
+
+#botaomenu{
+margin-left: 50px;
+background-color: rgb(0, 56, 130);
+border-radius: 20px;
+margin-top: 100px;
+
+}
+#botaomenu:hover{
+    transition: 1s;
+    background-color: rgb(13, 21, 56);
+}
+
+
+li:hover{
+    transition: 1s;
+    background-color: rgb(13, 21, 56);
+    
+}
+h3{
+    padding: 10px;
+}
+a:hover{
+    transition: 1s;
+    color: ivory;
+}
+h3:hover{
+    transition: 1s;
+    color: ivory;
+}
+.conteiner{
+    display: flex;
+    flex-direction:column;
+    background-color:white ;
+   
+    
+}
+p{
+    font-size: 20px;
+}
+.conteudo{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    /*margin-left: 200px;
+    margin-right: 10px;*/
+    background-color: white;
+    margin-top: 100px;
+    justify-content: center;
+    
+}
+.propaganda{
+background-color: brown;
+width: 800px;
+
+}
+img{
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.conteudoitem{
+  background-color: rgb(228, 222, 222);
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  
+}
+#btnComprar{
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+/*botão para colocar o item escolinho no carrinho*/
+#btnCarrinho{
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: 20px;
+    padding: 10px;
+    height: 20;
+
+}
+   .divBotao{
+    border: rgb(214, 213, 213);
+    border-width: 5px;
+    border-style: solid;
+
+   }
+.divPreco{
+    background-color: indianred;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    
+
+}
+.divProduto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    height: auto;
+    width: auto;
+
+}
+.divbtncarrinho{
+    margin-left: 900px;
+    margin-top: 10px;
+    position: fixed;
+    background-color: rgb(0, 56, 130);
+
+}
+/*botao carrinho*/
+#viewCarrinho{
+    height: 50px;
+    width: 100px;
+    background-color:rgb(0, 56, 130) ;
+    color: ivory;
+    
+    
+       
+}
+#carrinhosimg{
+  height: 50px;
+  width: 50px;
+  
+ 
+  
+
+}
+#inputprocura{
+    
+     height: 25px;
+     width: 200px;
+     font-style: oblique;
+     text-transform: capitalize ;
+
+}
+/*div criada temporariamente para mostrar os itens que estão no carrinho passando o mouse em cima*/
+/*.mcarrinho{
+    height: 40px;
+    width: 40px;
+
+}*/
+.menucabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   align-items: center;
+    width: auto;
+    background-color: rgb(0, 56, 130);
+    height: 60px;
+   
+}
+
+    
+    
+   
+
+/* div que fixa que recebe a div mcarrinho */
+.pequenoCarrinho{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;*/
+    margin-top: 50px;
+    height:auto;
+    width: 420px;
+    overflow-y: scroll;
+    justify-items: start;
+    transition: .5s all .5s;
+        
+}
+.pequenoCarrinho:hover{
+   
+}
+#divcorpo{
+    display: flex;
+    flex-direction: row;
+}
+ /*Div principal da pagina de compra*/ 
+#conteinercomprar{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* div que mostra a pré visualização do carrinho*/
+#mini{
+
+height: auto;
+width: 50px;
+background-color: lightblue;
+
+}
+#imgcarrinho{
+    width: 70px;
+    height:70px;
+}
+#calças{
+    font-style: normal;
+     color: black;
+}
+#pricipaldecomprar{
+ display: flex;
+ flex-direction: row;
+  
+}
+#descprodutocomprar{
+   width: 460px;
+   height: auto;
+  
+  
+}
+#atributoscomprar{
+    display: flex;
+    flex-direction: column;
+
+    width: 430px;
+    height: auto;
+    
+}
+#opçtamanho{
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#opçcor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gainsboro;
+}
+#optBlack{
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+
+#optBlack:hover{
+    color: gainsboro;
+}
+#optWhite{
+    background-color: white;
+    color: white;
+}
+#optWhite:hover{
+    color: black;
+}
+    
+#optBlue{
+    background-color: blue;
+    color: blue;
+}
+#optBlue:hover{
+    color: gainsboro;
+}
+#optRed{
+    background-color: red;
+    color: red;
+}
+#optRed:hover{
+    color: gainsboro;
+}
+option{
+    display: flex;
+    border: rgb(253, 253, 253);
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    
+    background-color: rgb(25, 120, 151);
+    justify-content: center;
+    align-items: center;
+}
+#cont{
+    height: auto;
+    width: 380px;
+}
+

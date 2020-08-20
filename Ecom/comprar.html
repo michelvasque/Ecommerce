@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="conteinercomprar">
+            <div class="menucabecalho">
+                <input type="text" placeholder="Oque você está procurando ?" id="inputprocura"
+                 onkeypress="Javascript: if (event.keyCode==13) Procura()">
+                <img src="carrinhos.png" id="carrinhosimg">
+                <button id="viewCarrinho" onclick="EntrarCarrinho()"
+                onmouseover="MostrarDivCarrinho()" onmouseout="TirarDivCarrinho()" > CARRINHO</button>
+            </div> 
+          <div id="pricipaldecomprar">  
+                <div id="descprodutocomprar">
+                    
+                
+                
+                
+                </div>
+                <div class="cont"  id="cont" >  
+
+                 </div>
+                 <div id="atributoscomprar">
+                    <h3>Tamanho</h3>   
+                    <div id="opçtamanho">
+                        
+                        <option value="GG" onclick="Tamanho('GG')">GG</option>
+                        <option value="G"  onclick="Tamanho('G')">G</option>
+                        <option value="M"  onclick="Tamanho('M')">M</option>
+                        <option value="P"  onclick="Tamanho('P')">P</option>               
+                    </div>
+                    <h3>Cor</h3>
+                    <div id="opçcor">
+                         
+                        <option id="optBlack"  onclick="Cores('Black')">Black</option>
+                        <option id="optWhite"  onclick="Cores('White')">White</option>
+                        <option id="optBlue" onclick="Cores('Blue')">Blue</option>
+                        <option id="optRed"  onclick="Cores('Red')">Red</option>               
+                    </div>
+                    Consultar CEP
+                    <div id="cep">
+                         
+                        <input type="number" id="numcep" placeholder="Cep">
+                        <button id="btncep" onclick="CosultarCep()" >Buscar</button>
+                    </div>
+                    <button id="btnComprar" onclick="PedidoFinal()">Comprar</button>
+
+                 </div>    
+            </div>  
+        </div>    
+        <script src="./scriptComprar.js"></script>
+</body>
+</html>

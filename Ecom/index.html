@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Muda Cor</title>
+</head>
+<body id="div">
+  
+  <div class="conteiner">
+            <div class="menucabecalho">
+                <div>
+                      <input type="text" placeholder="Oque você está procurando ?" id="inputprocura"
+                      onkeypress="Javascript: if (event.keyCode==13) Procura()">
+                      <img src="carrinhos.png" id="carrinhosimg">
+                      <button id="viewCarrinho" onclick="EntrarCarrinho()"
+                      onmouseover="MostrarDivCarrinho()" onmouseout="TirarDivCarrinho()" > CARRINHO</button>
+                </div>
+                <div class="mini" id="mini"></div> 
+           </div>  
+        
+    <div id="divcorpo">
+        <div class="menu" id="me" >
+          
+          <button id="botaomenu"  onclick="MostrarMenu()" ><h3>Menu</h3></button> 
+            <ul class="lista" id="list">
+           
+                <li><h3><a href="#" id="calças"  onclick="Categorias('Calça')" >Calças</a></h3></li>
+                <li><h3 ><a href="#" id="camisas"  onclick="Categorias('Camisa')" >Camisas</a>  </h3></li>
+                <li><h3><a href="#" id="blusas"  onclick="Categorias('blusa')" >Blusas</a></h3></li>
+                <li><h3><a href="#" id="meias"  onclick="Categorias('Meia')" >Meias</a></h3></li>
+                
+            </ul>
+            <!--  <button class="button" onclick=Menu()>Mudar Cor</button> -->
+         </div>
+            <div class="conteudo"  id="con" >            
+              <!--  <button class="buttondiv"  onclick=Menudiv()>Mudar Cor</button> -->
+            </div>
+            <div class="pequenoCarrinho" id="pequenoCarrinho"></div>
+     </div>      
+   </div>       
+            <script src="./script.js"></script>
+
+</body>
+</html>
